@@ -26,10 +26,6 @@ const contractSlice = createSlice({
 export const { SET_FACTORY_CONTRACT, REMOVE_FACTORY_CONTRACT } =
   contractSlice.actions;
 
-<<<<<<< HEAD
 export const getFactoryContract = (state: RootState) => state.contract;
-=======
-export const getFactoryContract = (state: RootState) => state.signer;
->>>>>>> 8e7727f (Add: client, contract)
 
 export default contractSlice.reducer;

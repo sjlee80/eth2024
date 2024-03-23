@@ -33,7 +33,7 @@ const VoteDetailPage = () => {
     mint,
     getMaxSupply,
     getTokenAddress,
-    getMintedAmount
+    getMintedAmount,
   } = useContract();
   const date = new Date(data?.createdAt || '');
 
@@ -78,12 +78,12 @@ const VoteDetailPage = () => {
   });
 
   const { data: mintedAmount } = useQuery({
-    queryKey: [QUERY_KEY.TOKEN, "MintedAmount"],
+    queryKey: [QUERY_KEY.TOKEN, 'MintedAmount'],
     queryFn: () => getMintedAmount(signer, data?.pool || ''),
   });
 
   const { data: token } = useQuery({
-    queryKey: [QUERY_KEY.TOKEN, "Addreess"],
+    queryKey: [QUERY_KEY.TOKEN, 'Addreess'],
     queryFn: () => getTokenAddress(signer, data?.pool || ''),
   });
 
@@ -92,9 +92,9 @@ const VoteDetailPage = () => {
     mutationFn: mint,
     onSuccess: () => {
       queryClient.invalidateQueries({
-        queryKey: [QUERY_KEY.TOKEN, "MintedAmount"],
+        queryKey: [QUERY_KEY.TOKEN, 'MintedAmount'],
       });
-    }
+    },
   });
 
   return (
@@ -143,11 +143,7 @@ const VoteDetailPage = () => {
       </div>
       <div className={cn('inner')}>
         <div className={cn('button-inner')}>
-<<<<<<< HEAD
           {calculateDateDiff(data?.createdAt || '') <= 6 ? (
-=======
-          {calculateDateDiff(data?.createdAt || '') <= 6  === false ? (
->>>>>>> 8e7727f (Add: client, contract)
             <VoteBtn
               title="Mint"
               onClick={() => {
