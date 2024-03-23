@@ -1,0 +1,18 @@
+.container {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+  background-color: #4b4bed;
+  border: 1px solid transparent;
+  transition: all .2s ease;
+  font-size: 18px;
+
+  &:hover {
+    color: #4b4bed;
+    background-color: transparent;
+    border: 1px solid #4b4bed;
+    cursor: pointer;
+  }
+}

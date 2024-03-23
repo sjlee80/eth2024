@@ -1,0 +1,16 @@
+.button {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+}
+
+.connect-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .address {
+    margin-right: 12px;
+  }
+}

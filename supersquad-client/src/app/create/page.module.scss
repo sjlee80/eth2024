@@ -1,0 +1,28 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  .inner {
+    margin: 0 auto;
+    width: 50%;
+    min-width: 220px;
+  }
+
+  .margin {
+    margin-top: 50px;
+  }
+
+  .button {
+    margin-top: 80px;
+  }
+
+  .dropdownContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .dropdownInner {
+      width: 50%;
+      flex-grow: 1;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.container {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background-color: transparent;
+  margin-top: 80px;
+
+  .labelText {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-30px);
+  }
+
+  .input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 12px;
+    outline: none;
+    border-radius: 6px;
+  }
+
+  .list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #fff;
+    animation: slideDown .3s ease-in;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+    background-color: #333;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    transform: translateY(105%); 
+
+    &::-webkit-scrollbar-track {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 2px;
+    }
+
+    .item {
+      min-height: 32px;
+      color: #fff;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+
+      &:hover {
+        color: #000;
+        cursor: pointer;
+        background-color: #eee;
+      }
+    }
+
+    .selected {
+      color: #000;
+      background-color: #eee;
+    }
+  }
+
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

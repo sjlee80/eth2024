@@ -1,0 +1,35 @@
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 60px auto 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .inner {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid: '. . . .';
+    gap: 40px 30px;
+  }
+
+  @media (max-width: 1320px) {
+    .inner {
+      grid: '. . .';
+    }
+  }
+
+  @media (max-width: 980px) {
+    .inner {
+      grid: '. .'
+    }
+  }
+
+  @media (max-width: 660px) {
+    .inner {
+      grid: '.'
+    }
+  }
+}
