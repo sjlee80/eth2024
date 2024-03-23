@@ -11,7 +11,7 @@ const config: HardhatUserConfig = {
     baseSepolia: {
       url: 'https://sepolia.base.org',
       accounts: ["82464dbafe8d0199db36b7874a9325cecc569863b54169b6ae80a36cc6b44a76"],
-    }
+    },
   },
 };
 

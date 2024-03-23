@@ -13,6 +13,7 @@ export function useEthersSigner() {
       name: chain.name,
       ensAddress: chain.contracts?.ensRegistry?.address,
     };
+    if (!account) return ;
     const provider = new BrowserProvider(transport, network);
     const _signer = new JsonRpcSigner(provider, account.address);
 

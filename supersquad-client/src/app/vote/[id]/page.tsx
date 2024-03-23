@@ -143,7 +143,7 @@ const VoteDetailPage = () => {
       </div>
       <div className={cn('inner')}>
         <div className={cn('button-inner')}>
-          {calculateDateDiff(data?.createdAt || '') <= 6  === false ? (
+          {calculateDateDiff(data?.createdAt || '') <= 6 ? (
             <VoteBtn
               title="Mint"
               onClick={() => {
