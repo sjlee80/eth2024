@@ -5,11 +5,13 @@ const frameMetadata = getFrameMetadata({
   buttons: [
     {
       label: "Vote",
-      postUrl: "https://supersquad-votefi.vercel.app/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F"
+      action: 'link',
+      target: "https://supersquad-votefi.vercel.app/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F"
     },
     {
       label: "Trade",
-      postUrl: "https://supersquad-votefi.vercel.app/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F"
+      action: 'link',
+      target: "https://supersquad-votefi.vercel.app/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F"
     }
   ],
   image: "https://bronze-useful-hummingbird-283.mypinata.cloud/ipfs/QmaxBNrFVZvxAXog5oCc7x1Myp9BtXnHPPfi9WkffNB6t5",
