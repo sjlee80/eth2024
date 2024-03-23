@@ -143,7 +143,11 @@ const VoteDetailPage = () => {
       </div>
       <div className={cn('inner')}>
         <div className={cn('button-inner')}>
+<<<<<<< HEAD
           {calculateDateDiff(data?.createdAt || '') <= 6 ? (
+=======
+          {calculateDateDiff(data?.createdAt || '') <= 6  === false ? (
+>>>>>>> 8e7727f (Add: client, contract)
             <VoteBtn
               title="Mint"
               onClick={() => {
