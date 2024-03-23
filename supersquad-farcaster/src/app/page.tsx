@@ -11,7 +11,7 @@ const frameMetadata = getFrameMetadata({
     }
   ],
   image: "https://bronze-useful-hummingbird-283.mypinata.cloud/ipfs/QmaxBNrFVZvxAXog5oCc7x1Myp9BtXnHPPfi9WkffNB6t5",
-  post_url: "https://https://supersquad-votefi.vercel.app/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F"
+  post_url: "https://supersquad-votefi.vercel.app/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F"
 });
 
 export const metadata: Metadata = {
