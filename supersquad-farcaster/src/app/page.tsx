@@ -4,7 +4,10 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "Vote"
+      label: "Vote",
+    },
+    {
+      label: "Trade"
     }
   ],
   image: "https://bronze-useful-hummingbird-283.mypinata.cloud/ipfs/QmaxBNrFVZvxAXog5oCc7x1Myp9BtXnHPPfi9WkffNB6t5",
