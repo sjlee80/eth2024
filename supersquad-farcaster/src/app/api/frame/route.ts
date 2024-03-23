@@ -18,7 +18,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     <meta property="fc:frame:button:2:action" content="post_redirect" />
     <meta property="fc:frame:button:3" content="Video Tutorial" />
     <meta property="fc:frame:button:3:action" content="post_redirect" />
-    <meta property="fc:frame:post_url" content="http://localhost:3001/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F" />
+    <meta property="fc:frame:post_url" content="https://supersquad-votefi.vercel.app/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F" />
   </head></html>`);
   } else {
   return new NextResponse(`<!DOCTYPE html><html><head>
@@ -26,7 +26,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="https://bronze-useful-hummingbird-283.mypinata.cloud/ipfs/QmaxBNrFVZvxAXog5oCc7x1Myp9BtXnHPPfi9WkffNB6t5" />
     <meta property="fc:frame:button:1" content="Next Page" />
-    <meta property="fc:frame:post_url" content="http://localhost:3001/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F" />
+    <meta property="fc:frame:post_url" content="https://supersquad-votefi.vercel.app/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F" />
   </head></html>`);
   }
 }
