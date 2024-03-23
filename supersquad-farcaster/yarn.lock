@@ -21,6 +21,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@coinbase/onchainkit@npm:^0.11.0":
+  version: 0.11.0
+  resolution: "@coinbase/onchainkit@npm:0.11.0"
+  peerDependencies:
+    "@tanstack/react-query": ^5
+    "@xmtp/frames-validator": ^0.5.0
+    graphql: ^14
+    graphql-request: ^6
+    react: ^18
+    react-dom: ^18
+    viem: ^2.7.0
+  checksum: 10c0/9694cac6d4321551d5414a67f2254af48289455dd4b3be2ba609a5f0e10cd9398d431c2fcc47e745d2d7ebe0478fcc90c68edac44fc926f25a22b291a91b2ebc
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -2732,6 +2747,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "supersquad-farcaster@workspace:."
   dependencies:
+    "@coinbase/onchainkit": "npm:^0.11.0"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
