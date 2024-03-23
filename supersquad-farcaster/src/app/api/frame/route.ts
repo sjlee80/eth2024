@@ -1,17 +1,34 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 async function getResponse(req: NextRequest): Promise<NextResponse> {
-  
-  return new NextResponse(`<!DOCTYPE html><html><head>
+  const searchParams = req.nextUrl.searchParams
+  const id:any = searchParams.get("id")
+  const idAsNumber = parseInt(id)
+
+  const nextId = idAsNumber + 1
+
+  if(idAsNumber === 7){
+      return new NextResponse(`<!DOCTYPE html><html><head>
     <title>Hello, World</title>
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="https://bronze-useful-hummingbird-283.mypinata.cloud/ipfs/QmaxBNrFVZvxAXog5oCc7x1Myp9BtXnHPPfi9WkffNB6t5" />
-    <meta property="fc:frame:button:1" content="Vote" />
+    <meta property="fc:frame:button:1" content="Cosmic Cowboys" />
     <meta property="fc:frame:button:1:action" content="post_redirect" />
-    <meta property="fc:frame:button:2" content="Mint" />
+    <meta property="fc:frame:button:2" content="Blog post Tutorial" />
     <meta property="fc:frame:button:2:action" content="post_redirect" />
-    <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/redirect" />
+    <meta property="fc:frame:button:3" content="Video Tutorial" />
+    <meta property="fc:frame:button:3:action" content="post_redirect" />
+    <meta property="fc:frame:post_url" content="http://localhost:3001/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F" />
   </head></html>`);
+  } else {
+  return new NextResponse(`<!DOCTYPE html><html><head>
+    <title>This is frame ${id}</title>
+    <meta property="fc:frame" content="vNext" />
+    <meta property="fc:frame:image" content="https://bronze-useful-hummingbird-283.mypinata.cloud/ipfs/QmaxBNrFVZvxAXog5oCc7x1Myp9BtXnHPPfi9WkffNB6t5" />
+    <meta property="fc:frame:button:1" content="Next Page" />
+    <meta property="fc:frame:post_url" content="http://localhost:3001/vote/0x5D83d501c3f6c50fE9891af3486d16A3D29e243F" />
+  </head></html>`);
+  }
 }
 
 export async function POST(req: NextRequest): Promise<Response> {
