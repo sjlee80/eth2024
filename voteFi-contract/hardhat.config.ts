@@ -37,6 +37,14 @@ const config: HardhatUserConfig = {
       url: 'https://rpc.goerli.linea.build',
       accounts: [ACCOUNT],
     },
+    zircuit: {
+      url: 'https://zircuit1.p2pify.com/',
+      accounts: [ACCOUNT],
+    },
+    opSepolia: {
+      url: 'https://sepolia.optimism.io',
+      accounts: [ACCOUNT],
+    },
   },
 };
 
